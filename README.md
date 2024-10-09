@@ -1,0 +1,2 @@
+Previsão de Múltiplas Séries Temporais de Energia Elétrica Industrial Regional
+Este repositório contém o código e a documentação para a previsão de múltiplas séries temporais de consumo de energia elétrica industrial utilizando o modelo SSARIMA (Seasonal, Seasonal Autoregressive Integrated Moving Average). O projeto foi desenvolvido como parte de um estudo acadêmico para prever o consumo de energia elétrica em diferentes regiões industriais.
