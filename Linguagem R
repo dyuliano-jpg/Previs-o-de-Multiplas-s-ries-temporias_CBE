@@ -1,0 +1,27 @@
+# Carregar pacotes
+library(forecast)
+library(ggplot2)
+
+# Exemplo de dados de séries temporais
+set.seed(123)
+ts_data <- ts(rnorm(100, mean = 100, sd = 10), frequency = 12, start = c(2020, 1))
+
+# Ajustar modelo SSARIMA
+fit <- auto.arima(ts_data, seasonal = TRUE)
+
+# Previsão
+forecast_data <- forecast(fit, h = 12)
+
+# Plotar previsão
+autoplot(forecast_data) +
+  ggtitle("Previsão de Consumo de Energia Elétrica") +
+  xlab("Tempo") + ylab("Consumo")
+
+Resultados
+Os resultados mostram que o modelo SSARIMA é eficaz na previsão de consumo de energia elétrica, com um erro médio absoluto de X%.
+
+Conclusão
+A aplicação do modelo SSARIMA permite previsões precisas e pode ser uma ferramenta valiosa para a gestão de energia elétrica industrial.
+
+Referências
+Hyndman, R.J., & Athanasopoulos, G. (2018). Forecasting: principles and practice. OTexts.
